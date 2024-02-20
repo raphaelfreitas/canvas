@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        html{
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        #canvasHolder{
+            
+            height: 300vh;
+            top: 0;
+            transition: .5s;
+            background: #E8E7E5;
+        }
+
+        #canvasHolder.black{
+            background-color: #000;
+        }
+
+        #hero{
+           position: sticky;
+           top: 0;
+           
+        }
+
+        #canvasHolder img{
+            position: sticky;
+            left: calc(50% - 30px);
+            top: calc(50% - 30px);
+            transform: translateX(-50%) translateY(-50%);
+            width: 620px;
+            height: 620px;
+            transition: 1s;
+            opacity: 0;
+        }
+
+        h1{
+            margin: 100px auto;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="canvasHolder" class="initial">
+        <canvas id="hero"></canvas>
+        <img id="canvasImg" src="https://huemag2022dev.wpengine.com/wp-content/uploads/2024/02/v3.png" />
+    </div>
+    <div>
+        <h1>Another block on the page</h1>
+    </div>
+    <script type="text/javascript" src="canvas.js"></script>
+</body>
+</html>
